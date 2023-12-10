@@ -11,46 +11,54 @@
     <h1><b>Register</b></h1>
     <form>
         <div>
-            <label><b>First Name:</b></label>
+            <label for="fname"><b>First Name:</b></label>
             <input type="text" id="fname" name="fname">
         </div>
+        <br>
         <div>
-            <label><b>Last Name:</b></label>
+            <label for="lname"><b>Last Name:</b></label>
             <input type="text" id="lname" name="lname">
         </div>
+        <br>
         <div>
-            <label><b>
-                    <form="pass">Password:
-                </b></label>
-            <input type="pasword" id="pass" name="pass">
+            <label for="Email"><b>Email:</b></label>
+            <input type="text" id="Email" name="Email" placeholder="john@doe.com">
         </div>
-        <label>
-            <div>
-                <b>Confirm Password:</b>
-                <input type="pasword" id="pass" name="pass">
-            </div>
-        </label>
+        <br>
         <div>
-            <label><b>Birthday:</b></label>
+            <label for="pass"><b>Password:</b></label>
+            <input type="password" id="pass" name="pass" maxlength="15">
+        </div>
+        <br>
+        <div>
+            <label for="cpass"><b>Confirm Password:</b></label>
+            <input type="password" id="cpass" name="cpass" maxlength="15">
+        </div>
+        <br>
+        <div>
+            <label for="bdate"><b>Birthday:</b></label>
             <input type="date" id="bdate" name="bdate>">
         </div>
-        <labe>
-            <div>
-                <input type="radio">
-                <b>Male</b>
-            </div>
-            <div>
-                <input type="radio">
-                <b>Fmale</b>
-                <div>
-                    <input type="checkbox">
-                    <b>I accept the terms and services</b>
-                </div>
-                <p>Alrdy have an account<a href="login.html"> <b>Log up here!</b></p>
-                </p>
-                <div>
-                    <button type="button">Sing Up</button>
-                </div>
+
+        <div>
+            <input type="radio" id="Male" name="title" value="Male">
+            <label for="Male"><b>Male</b></label>
+            <br>
+            <input type="radio" id="Fmale" name="title" value="Fmale">
+            <label for="Fmale"><b>Fmale</b></label>
+
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="I accept the terms and services" name="title">
+            <label for="I accept the terms and services"><b>I accept the terms and services</b></label>
+        </div>
+
+        <p>Alrdy have an account<a href="login.html"> <b>Log up here!</b></p>
+        </p>
+        <div>
+            <button type="button">Sing Up</button>
+        </div>
     </form>
 
 </body>
