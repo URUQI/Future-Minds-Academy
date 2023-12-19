@@ -1,0 +1,24 @@
+* {}
+
+.card {
+    background-color: red;
+    border: 5px dotted black;
+    margin: 50px 200px;
+    padding: 10px 20px 30px 40px;
+    text-decoration-color: blue;
+
+}
+
+.card h1 {
+    text-decoration: 5px solid dotted line-through blue;
+    text-align: center;
+
+}
+
+.card h1::first-letter {
+    font-size: 70px;
+}
+
+.card h1: :nth-child(odd) {
+    color
+}
