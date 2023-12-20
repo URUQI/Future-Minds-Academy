@@ -20,5 +20,5 @@
 }
 
 .card h1: :nth-child(odd) {
-    color
+    background-color
 }
