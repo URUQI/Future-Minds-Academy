@@ -1,0 +1,14 @@
+h1:hover {
+    background-color: blue;
+
+
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+h1:hover::first-letter {
+    font-size: 100px;
+}
