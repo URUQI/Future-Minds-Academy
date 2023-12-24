@@ -1,0 +1,40 @@
+div {
+    border: 1px solid;
+    width: 500px;
+    height: 100px;
+    background-color: #FFFFFF;
+    position: relative;
+    box-shadow: -5px -5px 5px 0px #7C7A75;
+    left: 20px;
+    top: 10px;
+}
+
+div p {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 20px;
+}
+
+button {
+    position: absolute;
+    background-color: red;
+    border-radius: 20px;
+    left: 490px;
+    top: -10px;
+
+}
+
+h1 {
+    position: relative;
+    left: 10px;
+    bottom: 53px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+}
+
+iframe {
+    position: fixed;
+    right: -5px;
+    bottom: -5px;
+}

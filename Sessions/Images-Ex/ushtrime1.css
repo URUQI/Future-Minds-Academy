@@ -16,7 +16,10 @@ body {
 
 }
 
+@media (max-width:600px) {
+    /* CSS for screens below or echual to 600px wide */
 
+}
 
 .card1 {
     background-color: blue;
@@ -25,4 +28,12 @@ body {
 .cardBody {
     width: 50%;
     background-color: green;
+}
+
+.card2 {
+    border: solid 1px red;
+    content: 50px;
+    padding: 30px;
+    margin: 50px;
+    background-color: aqua;
 }

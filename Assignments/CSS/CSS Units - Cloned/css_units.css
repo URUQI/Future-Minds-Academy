@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.table tr:nth-child(odd) {
+    color: white;
+    background-color: rgb(73, 72, 72);
+
+}
+
+.table tr:nth-child(even) {
+    background-color: rgb(253, 253, 249);
+}
+
+.table h1 {
+    text-decoration: underline;
+}
+
+hr {
+    border-top: 2px solid red;
+    width: 30vh;
+}
+
+.table {
+    width: 60vh;
+    height: 30vw;
+    border: 1px solid black;
+}

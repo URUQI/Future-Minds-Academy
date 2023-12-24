@@ -1,0 +1,17 @@
+figure {
+    content: 300px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    float: left;
+}
+
+figure:hover {
+    border: 5px dotted red;
+    cursor: pointer;
+    width: 315px;
+
+}
+
+figure {
+    position: inherit;
+}
