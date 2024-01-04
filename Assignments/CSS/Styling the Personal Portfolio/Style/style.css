@@ -1,0 +1,131 @@
+/*Global*/
+body {
+    cursor: url(https://cur.cursors-4u.net/others/oth-8/oth756.cur), auto !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../Assets/Image/wp.jpg");
+    background-repeat: none;
+    background-size: cover;
+    padding: 20px 250px;
+}
+
+
+a,
+li {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.borderRadius {
+    border-radius: 10px;
+
+}
+
+.inlineD {
+    display: inline;
+}
+
+.textAlingC {
+    text-align: center;
+}
+
+.textBlack {
+    color: black
+}
+
+.margin10 {
+    margin: 0px 10px;
+}
+
+.marginX10 {
+    margin: 10px 0px 10px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.paddingX10 {
+    padding: 10px 0px 10px;
+}
+
+/*body*/
+
+.backgroundGreen {
+
+    background: rgb(249, 248, 248);
+    background: radial-gradient(circle, rgba(249, 248, 248, 1) 0%, rgba(4, 246, 105, 1) 99%);
+}
+
+.hoverGreen:hover {
+
+    border: solid 3px black;
+    background: rgb(249, 248, 248);
+    background: radial-gradient(circle, rgba(249, 248, 248, 1) 0%, rgba(4, 246, 178, 1) 99%);
+}
+
+.backgroundBlue {
+    background: rgb(249, 248, 248);
+    background: radial-gradient(circle, rgba(249, 248, 248, 1) 0%, rgba(4, 211, 246, 1) 99%);
+}
+
+.backgroundSilver {
+    background-color: silver;
+}
+
+.hoverBlue:hover {
+    border: solid 3px black;
+    background: rgb(249, 248, 248);
+    background: radial-gradient(circle, rgba(249, 248, 248, 1) 0%, rgba(4, 155, 246, 1) 99%);
+}
+
+/*My Skills*/
+.border {
+    border-collapse: collapse;
+}
+
+.backgroundAqua {
+    background-color: aqua;
+}
+
+.backgroundBlueDark {
+    background: rgb(249, 248, 248);
+    background: radial-gradient(circle, rgba(249, 248, 248, 1) 0%, rgba(4, 110, 246, 1) 99%);
+}
+
+.hoverBleuDark:hover {
+    border: solid 3px black;
+    background: rgb(249, 248, 248);
+    background: radial-gradient(circle, rgba(249, 248, 248, 1) 0%, rgba(4, 74, 246, 1) 99%);
+}
+
+/*My projects*/
+.backgroundPurple {
+    background: rgb(249, 248, 248);
+    background: radial-gradient(circle, rgba(249, 248, 248, 1) 0%, rgba(4, 49, 246, 1) 99%);
+}
+
+.hoverPurple:hover {
+    border: solid 3px black;
+    background: rgb(249, 248, 248);
+    background: radial-gradient(circle, rgba(249, 248, 248, 1) 0%, rgba(4, 9, 246, 1) 99%);
+}
+
+.arrow {
+    border: solid 1px;
+    border-radius: 3px;
+    background-color: red;
+    color: black;
+}
+
+/*Footer*/
+.backgroundBlack {
+    background-color: black;
+    color: white;
+    border: solid 1px black;
+
+}
