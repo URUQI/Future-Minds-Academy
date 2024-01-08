@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    display: flex;
+
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 450px;
+}
+
+.size-label {
+    color: pink;
+    font-size: 70px;
+    position: absolute;
+    margin-top: -100px;
+    text-align: center;
+}
+
+.size {
+
+    border: solid 3px;
+    color: pink;
+    size: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.sizes-conteiner {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.product-category {
+    color: pink;
+    font-size: 70px;
+}
+
+
+
+.product-title {
+    color: black;
+    font-size: 100px;
+}
+
+.product-price {
+    color: pink;
+    font-size: 100px;
+}
+
+.add-to-card-button {
+    border: solid transparent;
+    background-color: pink;
+
+}
+
+.dropdown-button {
+    border: solid transparent;
+    background-color: pink;
+
+}
+
+.size {
+    align-items: flex-end;
+}

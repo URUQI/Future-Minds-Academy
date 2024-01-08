@@ -1,5 +1,5 @@
 /*Global*/
-body {
+* {
     cursor: url(https://cur.cursors-4u.net/others/oth-8/oth756.cur), auto !important;
 }
 
@@ -12,7 +12,6 @@ body {
     padding: 20px 250px;
 }
 
-
 a,
 li {
     text-decoration: none;
@@ -22,6 +21,7 @@ li {
 
 .borderRadius {
     border-radius: 10px;
+    border: 3px solid transparent;
 
 }
 
