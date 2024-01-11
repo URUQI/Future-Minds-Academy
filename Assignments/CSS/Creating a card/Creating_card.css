@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: solid 3px black;
+    width: 300px;
+    position: absolute;
+    -webkit-box-shadow: 5px -6px 18px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px -6px 18px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px -6px 18px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+
+
+.CardBody {
+    display: flex;
+
+}
+
+.Card {
+
+
+    width: 150px;
+    flex-direction: row;
+    border: solid 3px black;
+    text-align: center;
+
+
+}
+
+.Card1 {
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}

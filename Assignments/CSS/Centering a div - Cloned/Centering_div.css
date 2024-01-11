@@ -1,22 +1,17 @@
-* {
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
+    background-color: burlywood;
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
+
 .card {
-
-    background-color: burlywood;
-    width: 500px;
-
-}
-
-h1 p {
-    width: 200px;
+    border: solid 3px black;
     background-color: white;
+    text-align: center;
+
 }
