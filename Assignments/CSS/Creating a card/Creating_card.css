@@ -3,38 +3,40 @@
     padding: 0;
 }
 
-body {
-    border: solid 3px black;
-    width: 300px;
-    position: absolute;
-    -webkit-box-shadow: 5px -6px 18px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 5px -6px 18px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 5px -6px 18px 0px rgba(0, 0, 0, 0.75);
+.main {
+    display: flex;
+    justify-content: space-around;
 
 }
+
 
 
 
 .CardBody {
-    display: flex;
 
+    width: 300px;
+    border: solid 3px black;
+    -webkit-box-shadow: 0px 2px 22px 9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 22px 9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 22px 9px rgba(0, 0, 0, 0.75);
 }
 
 .Card {
-
-
-    width: 150px;
+    display: flex;
     flex-direction: row;
-    border: solid 3px black;
-    text-align: center;
 
 
 }
 
 .Card1 {
-    gap: 10px;
-    flex-direction: column;
-    justify-content: flex-start;
+    text-align: center;
+    width: 150px;
+    border: solid 3px black;
+    padding: 10px 0;
+}
 
-
+.Card2 {
+    position: relative;
+    top: 30px;
+    left: 20px;
 }
