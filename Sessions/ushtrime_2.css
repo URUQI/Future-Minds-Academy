@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Global*/
+.dFlex {
+    display: flex;
+}
+
+.width80 {
+    width: 80%;
+}
+
+.flexDirectionColumn {
+    flex-direction: column;
+}
+
+.justifyCspaceBetwen {
+    justify-content: space-between;
+}
+
+.alignItemCenter {
+    align-items: center;
+}
+
+.gap2 {
+    gap: 2px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+.borderRadius20 {
+    border-radius: 20px;
+}
+
+.bgBlue {
+    background-color: blue;
+}
+
+.textWhite {
+    color: white;
+}
+
+/*Header*/
+
+header {
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    height: 10vh;
+
+}
+
+.logo {
+    border-radius: 50%;
+    height: 50px;
+}
+
+/*Main*/
+
+.Card {
+    width: 600px;
+    color: white;
+    background-color: blue;
+}
+
+.CardLeftImg {
+    width: 100%;
+}
+
+.CardBotton {
+    padding: 10px;
+}
