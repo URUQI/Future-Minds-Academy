@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+
+
+}
+
+.padding20 {
+
+    padding: 20px;
+}
+
+div {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+header {
+
+    background-color: burlywood;
+}
+
+aside {
+    background-color: palevioletred;
+}
+
+main {
+    background-color: chartreuse;
+}
+
+footer {
+    background-color: blueviolet;
+}
