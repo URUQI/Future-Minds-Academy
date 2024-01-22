@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: red;
+}
+
+.leftSide {
+    background-color: yellow;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+
+    padding: 50px;
+    background-color: green;
+}
+
+div {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+section {
+    display: grid;
+    height: 250px;
+    width: 250px;
+    background-color: darkgrey;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightSide {
+    background-color: aqua;
+}
+
+footer {
+    background-color: brown;
+}
