@@ -1,0 +1,53 @@
+.backgroundGreen {
+    background-color: green;
+}
+
+.backgroundBlue {
+    background-color: rgb(30, 155, 204);
+}
+
+.darkGray {
+    color: darkgray;
+}
+
+.btn {
+    border: solid 1px darkgray;
+    text-align: center;
+    padding: 5px;
+    color: white;
+
+}
+
+.white {
+    color: white;
+}
+
+.backgroundRed {
+    background-color: red;
+}
+
+.hr {
+    border-top: 1px solid darkgray;
+}
+
+.font {
+    font-size: 50px;
+}
+
+.blue {
+    color: rgb(30, 155, 204);
+}
+
+header {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto 1fr;
+}
+
+aside {
+    padding: 0px 20px;
+    display: grid;
+    grid-row: auto;
+    align-content: center;
+    justify-items: end;
+}
