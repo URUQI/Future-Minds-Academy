@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: grid;
+
+}
+
+header {
+    width: 100vh;
+    background-color: red;
+}
+
+.asideLeft {
+    background-color: yellow;
+}
+
+.asideRight {
+    background-color: aqua;
+}
+
+main {
+
+    background-color: green;
+}
+
+footer {
+    background-color: brown;
+}
+
+div {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto, 1fr, auto;
+
+}
