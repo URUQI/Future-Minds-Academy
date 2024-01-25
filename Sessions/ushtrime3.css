@@ -1,53 +1,67 @@
-.backgroundGreen {
-    background-color: green;
-}
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
 
-.backgroundBlue {
-    background-color: rgb(30, 155, 204);
-}
-
-.darkGray {
-    color: darkgray;
-}
-
-.btn {
-    border: solid 1px darkgray;
-    text-align: center;
-    padding: 5px;
-    color: white;
-
-}
-
-.white {
-    color: white;
-}
-
-.backgroundRed {
-    background-color: red;
-}
-
-.hr {
-    border-top: 1px solid darkgray;
-}
-
-.font {
-    font-size: 50px;
-}
-
-.blue {
-    color: rgb(30, 155, 204);
 }
 
 header {
-    display: grid;
     height: 100vh;
+    display: grid;
     grid-template-columns: auto 1fr;
+
 }
 
 aside {
-    padding: 0px 20px;
+    height: 100vh;
+    background-color: darkgray;
+
+}
+
+.hr {
+    border-top: solid 2px black;
+
+}
+
+.imgLogo {
+    height: 50px;
+    width: 150px;
+}
+
+.CardNavUl {
+    background-color: rgb(218, 66, 185);
+    height: 50px;
     display: grid;
-    grid-row: auto;
+    position: relative;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
     align-content: center;
-    justify-items: end;
+}
+
+.CardNavUlDiv {
+    display: grid;
+
+}
+
+.Btn {
+    border: solid 2px transparent;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 10px;
+}
+
+.arton:hover+.hover2 {
+    display: block;
+    border: solid 3px transparent;
+
+}
+
+.hover2 {
+    display: none;
+    border: solid 3px black;
+    background-color: gray;
+    color: red;
+    padding: 10px;
+
 }
