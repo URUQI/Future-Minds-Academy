@@ -5,15 +5,11 @@
 
 .main {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
 }
 
-
-
-
 .CardBody {
-
+    position: relative;
     width: 300px;
     border: solid 3px black;
     -webkit-box-shadow: 0px 2px 22px 9px rgba(0, 0, 0, 0.75);
@@ -25,18 +21,19 @@
     display: flex;
     flex-direction: row;
 
-
 }
 
 .Card1 {
-    text-align: center;
-    width: 150px;
+    display: flex;
     border: solid 3px black;
-    padding: 10px 0;
+    flex-direction: column;
+    width: 150px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .Card2 {
-    position: relative;
-    top: 30px;
-    left: 20px;
+    position: absolute;
+    padding: 20px;
 }
