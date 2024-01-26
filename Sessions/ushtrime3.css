@@ -33,7 +33,6 @@ aside {
     background-color: rgb(218, 66, 185);
     height: 50px;
     display: grid;
-    position: relative;
     grid-template-columns: auto auto auto auto;
     justify-content: space-evenly;
     align-content: center;

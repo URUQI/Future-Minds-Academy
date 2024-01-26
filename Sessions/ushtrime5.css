@@ -1,0 +1,17 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    background-color: red;
+    width: 5vw;
+    height: 5vh;
+    transition: Background-color 3s, width 1.5s, height 5s 2s ease-in-out;
+}
+
+div:hover {
+    background-color: blue;
+    width: 100vw;
+    height: 99vh;
+}
