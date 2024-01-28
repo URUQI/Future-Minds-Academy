@@ -5,7 +5,7 @@
 
 img {
     filter: blur(10px);
-    transform: rotate(720deg);
+    transition: rotate(720deg);
     transition: filter 0.1s, transform 2s 0.1s ease-in-out;
 
 }

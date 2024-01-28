@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Global*/
+.dGrid {
+    display: grid;
+}
+
+.paddingY20 {
+    padding: 20px 0 20px;
+
+}
+
+.paddingYX {
+    padding: 100px 50px 100px 50px;
+}
+
+.hr {
+    border-top: 1px solid darkgray;
+}
+
+.btn {
+    border: solid 1px darkgray;
+    text-align: center;
+    padding: 2px 5px;
+    color: white;
+}
+
+
+.blue {
+    color: rgb(30, 155, 204);
+}
+
+.darkGray {
+    color: darkgray;
+}
+
+.font {
+    font-size: 50px;
+
+}
+
+/*Header*/
+header {
+    height: 100vh;
+    grid-template-columns: auto 1fr;
+}
+
+/*Aside*/
+
+aside {
+    padding: 0px 20px;
+    grid-row: auto;
+    align-content: center;
+    justify-items: end;
+}
+
+/*R Side*/
+.Card {
+    align-items: center;
+
+}
+
+.white {
+    color: white;
+}
+
+.backgroundGreen {
+    background-color: green;
+}
+
+article {
+    grid-template-columns: 1fr auto;
+}
+
+img {
+    border: 1px solid transparent;
+    height: 75px;
+    border-radius: 50%;
+    width: 75px;
+}
+
+.backgroundRed {
+    background-color: red;
+}
+
+.backgroundBlue {
+    background-color: rgb(30, 155, 204);
+}
+
+@media (max-width:700px) {
+    header {
+        grid-template-rows: auto 1fr;
+    }
+}

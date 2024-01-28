@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Card {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border: solid 3px black;
+    background-color: gray;
+    width: 20vw;
+    height: 20vh;
+    padding: 20px;
+    position: relative;
+
+}
+
+p {
+    position: absolute;
+    visibility: hidden;
+    /* animation properties*/
+    animation-name: my-animation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    border: solid 2px black;
+}
+
+.buttoni-pictura {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+@keyframes my-animation {
+    from {
+        visibility: hidden;
+    }
+
+    to {
+        visibility: visible;
+    }
+}
