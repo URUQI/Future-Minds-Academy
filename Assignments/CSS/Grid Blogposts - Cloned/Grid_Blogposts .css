@@ -46,10 +46,11 @@
 body {
     height: 100vh;
     grid-template-columns: auto 1fr;
+    justify-items: center;
+
 }
 
 /*Aside*/
-
 aside {
     padding: 0px 20px;
     grid-row: auto;
