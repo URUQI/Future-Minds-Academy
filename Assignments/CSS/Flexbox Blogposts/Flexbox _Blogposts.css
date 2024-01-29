@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-header {
+body {
     display: flex;
     border: solid 1px black;
     height: 100vh;
@@ -49,8 +49,8 @@ aside {
     padding: 40px;
 }
 
-.paddingLeft10 {
-    padding: 0px 10px;
+.paddingLeft30 {
+    padding: 0px 30px;
 }
 
 .btn {

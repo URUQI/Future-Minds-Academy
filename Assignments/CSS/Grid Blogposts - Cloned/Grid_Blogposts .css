@@ -42,8 +42,8 @@
 
 }
 
-/*Header*/
-header {
+/*Body*/
+body {
     height: 100vh;
     grid-template-columns: auto 1fr;
 }

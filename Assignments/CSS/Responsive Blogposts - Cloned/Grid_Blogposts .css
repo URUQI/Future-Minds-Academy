@@ -42,8 +42,8 @@
 
 }
 
-/*Header*/
-header {
+/*Bodyr*/
+body {
     height: 100vh;
     grid-template-columns: auto 1fr;
 }
@@ -91,7 +91,9 @@ img {
 }
 
 @media (max-width:700px) {
-    header {
-        grid-template-rows: auto 1fr;
+    body {
+        display: flex;
+        grid-template-rows: auto auto;
+
     }
 }

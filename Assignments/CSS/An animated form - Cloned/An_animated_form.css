@@ -44,6 +44,10 @@ button {
 img {
     height: 30px;
     width: 30px;
+    animation-name: rrethi;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes my-animation {
@@ -53,5 +57,15 @@ img {
 
     to {
         visibility: visible;
+    }
+}
+
+@keyframes rrethi {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
