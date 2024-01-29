@@ -16,7 +16,7 @@
 
 }
 
-p {
+.name p {
     position: absolute;
     visibility: hidden;
     /* animation properties*/
@@ -24,7 +24,26 @@ p {
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+}
 
+.lname p {
+    position: absolute;
+    visibility: hidden;
+    /* animation properties*/
+    animation-name: my-animation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.email p {
+    position: absolute;
+    visibility: hidden;
+    /* animation properties*/
+    animation-name: my-animation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 button {
@@ -44,6 +63,7 @@ button {
 img {
     height: 30px;
     width: 30px;
+    /* animation properties*/
     animation-name: rrethi;
     animation-duration: 1s;
     animation-delay: 0s;
