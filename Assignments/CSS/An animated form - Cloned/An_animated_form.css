@@ -3,61 +3,40 @@
     padding: 0px;
 }
 
-.Card {
-    display: grid;
-    align-content: center;
+body {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    border: solid 3px black;
+    height: 100vh;
+}
+
+form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
     background-color: gray;
-    width: 20vw;
-    height: 20vh;
-    padding: 20px;
-    position: relative;
-
 }
 
-.name p {
-    position: absolute;
+label {
     visibility: hidden;
-    /* animation properties*/
-    animation-name: my-animation;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+    transition: transform .5s ease-out;
+    transform: translateY(5px);
 }
 
-.lname p {
-    position: absolute;
-    visibility: hidden;
-    /* animation properties*/
-    animation-name: my-animation;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+input:focus+label {
+    visibility: visible;
+    transform: translateY(0px);
 }
 
-.email p {
-    position: absolute;
-    visibility: hidden;
-    /* animation properties*/
-    animation-name: my-animation;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+.card {
+    display: flex;
+    justify-content: space-between;
 }
 
 button {
     background-color: blue;
     color: white;
     padding: 5px;
-    margin-top: 20px;
-    border: solid 2px black;
-}
-
-.buttoni-pictura {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 }
 
 img {
@@ -65,9 +44,11 @@ img {
     width: 30px;
     /* animation properties*/
     animation-name: rrethi;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
 }
 
 @keyframes my-animation {
@@ -81,9 +62,6 @@ img {
 }
 
 @keyframes rrethi {
-    from {
-        transform: rotate(0deg);
-    }
 
     to {
         transform: rotate(360deg);
