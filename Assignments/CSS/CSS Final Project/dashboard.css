@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dGrid {
+    display: grid;
+}
+
+body {
+    grid-template-columns: auto 1fr;
+}
+
+.Card {
+    grid-template-columns: 1fr auto;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    height: 100vh;
+    width: 30vw;
+    background-image: url(./images/sidebar-1.jpg);
+    color: white;
+}
+
+.avatar img {
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vw;
+}
+
+figure {
+    grid-template-columns: 1fr;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px 20px;
+    margin: 20px 10px;
+}
+
+.headerDashboard {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerDashboardImg {
+    padding: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.headerDashboardImg:hover {
+    box-shadow: 1px 2px 2px 4px rgba(53, 53, 53, 0.405);
+}
+
+/* Rside of header */
+.rDashboard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.searchBar {
+    background-color: lightgray;
+    border-style: none;
+    border-bottom: 1px solid gray;
+}
+
+/* Card */
+.card {
+    border-radius: 20px;
+    background-color: white;
+    margin: 50px 20px;
+}
+
+.cardTitle {
+    position: relative;
+}
+
+.cardFigure {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    background-color: green;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.firstCard {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.flagList {
+    display: grid;
+}
+
+.flagList img {
+    width: 50px;
+}
+
+.list {
+    padding: 100px 10px;
+}
+
+.titleGlobal {
+    padding: 15px 80px;
+    width: 320px;
+}
+
+.paddingY100X10 {
+    padding: 100px 10px;
+}
+
+.littleCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
