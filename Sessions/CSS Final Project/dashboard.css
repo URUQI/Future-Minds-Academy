@@ -12,13 +12,15 @@
 
 
 body {
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr auto;
+
+    height: 100vh;
 }
 
 aside {
     background: rgba(0, 0, 0, 0.788) url(./assets/images/sidebar-1.jpg);
     background-blend-mode: darken;
-    height: 100vh;
+
     padding: 10px 20px;
 
 }
@@ -53,21 +55,42 @@ aside {
 /* Right Side */
 .rSide {
     background-color: lightgray;
+
+
 }
 
 /* Header */
 header {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 10px 20px;
-    margin: 20px 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto;
+    justify-content: space-between;
+    grid-row: 2/3;
+}
+
+.headerIcon {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerIcon2 {
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
 }
 
 .headerDashboard {
-    display: grid;
-    grid-template-columns: 50px 50px;
-    align-items: center;
-    gap: 10px;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+}
+
+
+.hiden {
+    visibility: hidden;
 }
 
 .headerDashboardImg {
@@ -79,22 +102,7 @@ header {
 }
 
 .headerDashboardImg:hover {
-    -webkit-box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, 0.76);
-    -moz-box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, 0.76);
-}
-
-.hide {
-    visibility: ;
-    position: absolute;
-    padding: 40px 20px 0px;
-    border: solid rgb(41, 38, 38);
-
-}
-
-.hide:hover {
-    visibility: visible;
-
+    box-shadow: 1px 2px 2px 4px rgba(53, 53, 53, 0.405);
 }
 
 /* Rside of header */
@@ -116,6 +124,9 @@ header {
     border-radius: 20px;
     background-color: white;
     margin: 50px 20px 20px 20px;
+    grid-row-start: 2;
+    grid-column-end: 4;
+
 }
 
 .cardTitle {
@@ -159,4 +170,13 @@ header {
 
 .paddingY100X10 {
     padding: 100px 10px;
+}
+
+.littleCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.statistics {
+    text-align: end;
 }
