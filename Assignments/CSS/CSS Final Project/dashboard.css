@@ -9,23 +9,89 @@
     display: grid;
 }
 
-
-
-body {
-    grid-template-columns: 1fr 5fr;
+.dFlex {
+    display: flex;
 }
 
+.flexDcolumn {
+    flex-direction: column;
+}
+
+.jContentSbetween {
+    justify-content: space-between;
+}
+
+.jContentCenter {
+    justify-content: center;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.aItemsCenter {
+    align-items: center;
+}
+
+.gap1R {
+    gap: 1rem;
+}
+
+.gap2R {
+    gap: 2rem;
+}
+
+.paddingX10 {
+    padding: 0px 10px;
+}
+
+.paddingY10 {
+    padding: 10px 0px;
+}
+
+.padding30-15 {
+    padding: 30px 15px 15px 15px;
+}
+
+body {
+    grid-template-columns: 1fr auto;
+
+}
+
+.borderRadius10 {
+    border-radius: 10px;
+}
+
+.cardFigure {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    width: 65px;
+}
+
+.bgColorWhite {
+    background-color: white;
+}
+
+.bgColorGreen {
+    background-color: green;
+}
+
+.colorLightGrey {
+    color: lightgrey;
+}
+
+/* Aside */
 aside {
     background: rgba(0, 0, 0, 0.788) url(./assets/images/sidebar-1.jpg);
     background-blend-mode: darken;
     height: 100vh;
     padding: 10px 20px;
-
 }
 
 .asideListImg {
-    width: 25px;
-    height: 25px;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
 }
 
@@ -36,85 +102,79 @@ aside {
     padding: 10px 20px;
     margin: 10px 10px;
     color: white;
+    cursor: pointer;
 }
 
 .active {
     background-color: red;
     border-radius: 10px;
-
 }
 
 .asideList:hover:not(.active, .asideListTitle) {
     background-color: gray;
     border-radius: 10px;
-
 }
 
 /* Right Side */
 .rSide {
+    grid-template-rows: auto 1fr 1fr 1fr auto;
     background-color: lightgray;
+    padding: 20px;
 }
 
 /* Header */
-header {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding: 10px 20px;
-    margin: 20px 10px;
-}
-
-.headerDashboard {
-    display: grid;
-    grid-template-columns: 50px 50px;
-    align-items: center;
-    gap: 10px;
-}
-
 .headerDashboardImg {
-    padding: 5px;
-    height: 25px;
-    width: 25px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
     background-color: white;
 }
 
 .headerDashboardImg:hover {
-    -webkit-box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, 0.76);
-    -moz-box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 0px 27px 9px rgba(0, 0, 0, 0.76);
+    -webkit-box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
 }
 
-.hide {
-    visibility: ;
-    position: absolute;
-    padding: 40px 20px 0px;
-    border: solid rgb(41, 38, 38);
-
-}
-
-.hide:hover {
-    visibility: visible;
-
-}
 
 /* Rside of header */
-.rDashboard {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    align-items: center;
-}
-
 .searchBar {
     background-color: lightgray;
     border-style: none;
     border-bottom: 1px solid gray;
+    outline: none;
 }
 
-/* Card */
-.card {
-    border-radius: 20px;
+.searchBar:focus {
+    border-bottom: 1px solid orangered;
+    transition: border-bottom 0.3s ease-in;
+}
+
+/* .notifications {
+    position: absolute;
+}
+
+.notificationsAlert {
+    position: relative;
+    border-radius: 50%;
+    background-color: red;
+    height: 17px;
+    width: 17px;
+
+}
+
+.notificationMessage {
+
+    border: solid transparent;
     background-color: white;
+    text-align: center;
+    padding: 5px;
+} */
+
+
+
+/* Main */
+.card {
     margin: 50px 20px 20px 20px;
 }
 
@@ -122,25 +182,15 @@ header {
     position: relative;
 }
 
-.cardFigure {
-    position: absolute;
-    top: -15px;
-    left: 15px;
-    background-color: green;
-    width: 50px;
-    border-radius: 10px;
-}
 
 .firstCard {
-    display: grid;
     grid-template-columns: auto 1fr;
 }
 
 .flagList {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    gap: 10px;
+
 }
 
 .flagList img {
@@ -148,15 +198,55 @@ header {
 }
 
 .list {
-    padding: 100px 10px;
+    padding: 50px 10px;
 
 }
 
 .titleGlobal {
-    padding: 15px 80px;
+    padding: 20px 90px;
     width: 320px;
 }
 
-.paddingY100X10 {
-    padding: 100px 10px;
+.paddingY80X10 {
+    padding: 80px 10px 10px 10px;
+}
+
+.iFrame {
+    height: 300px;
+    width: 1000Px;
+}
+
+/* 4 Cards */
+.cards4 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.box {
+    height: 15vh;
+    width: 40vw;
+    border: 1px solid transparent;
+}
+
+.bgColorOrange {
+    background-color: orange;
+}
+
+.bgColorPalevioletred {
+    background-color: palevioletred;
+}
+
+.bgColorBlue {
+    background-color: rgb(0, 217, 255);
+}
+
+/* 3 Cards */
+.cards3 {
+    grid-template-columns: auto auto auto;
+    height: 400px;
+    position: relative;
+}
+
+.card3Img {
+    height: 300px;
+
 }
