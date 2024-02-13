@@ -54,7 +54,8 @@
 }
 
 body {
-    grid-template-columns: 1fr auto;
+    overflow: hidden;
+    grid-template-columns: auto 1fr;
 
 }
 
@@ -87,6 +88,7 @@ aside {
     background-blend-mode: darken;
     height: 100vh;
     padding: 10px 20px;
+    overflow-y: scroll;
 }
 
 .asideListImg {
@@ -117,9 +119,11 @@ aside {
 
 /* Right Side */
 .rSide {
-    grid-template-rows: auto 1fr 1fr 1fr auto;
+
     background-color: lightgray;
     padding: 20px;
+    overflow-y: scroll;
+    height: 100vh;
 }
 
 /* Header */
@@ -212,8 +216,7 @@ aside {
 }
 
 .iFrame {
-    height: 300px;
-    width: 1000Px;
+    width: 100%;
 }
 
 /* 4 Cards */
