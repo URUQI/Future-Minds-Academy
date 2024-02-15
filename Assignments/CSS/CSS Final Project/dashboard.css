@@ -33,6 +33,10 @@
     align-items: center;
 }
 
+.PositionRelative {
+    position: relative;
+}
+
 .gap1R {
     gap: 1rem;
 }
@@ -72,7 +76,6 @@ body {
 }
 
 .cardFigure {
-    position: relative;
     top: -15px;
     left: 15px;
     width: 65px;
@@ -204,9 +207,7 @@ aside {
 
 /* Main */
 
-.cardTitle {
-    position: relative;
-}
+
 
 .firstCard {
     grid-template-columns: auto 1fr;
@@ -222,7 +223,6 @@ aside {
 }
 
 .titleGlobal {
-    position: relative;
     top: -60px;
     left: 90px;
     width: 320px;
@@ -255,19 +255,16 @@ aside {
 
 .cards3 {
     grid-template-columns: auto auto auto;
-    position: relative;
 }
 
 .card3Img {
     height: 300px;
-    position: relative;
     top: -20px;
     transition: top 0.7s ease-in-out;
 }
 
 .hiden {
     visibility: hidden;
-    position: relative;
     top: -40px;
 }
 
