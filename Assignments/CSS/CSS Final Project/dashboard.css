@@ -49,6 +49,10 @@
     padding: 10px 0px;
 }
 
+.padding5 {
+    padding: 5px;
+}
+
 .padding30-15 {
     padding: 30px 15px 15px 15px;
 }
@@ -87,6 +91,7 @@ body {
 }
 
 /* Aside */
+
 aside {
     background: rgba(0, 0, 0, 0.788) url(./assets/images/sidebar-1.jpg);
     background-blend-mode: darken;
@@ -122,6 +127,7 @@ aside {
 }
 
 /* Right Side */
+
 .rSide {
     background-color: lightgray;
     padding: 20px;
@@ -130,6 +136,7 @@ aside {
 }
 
 /* Header */
+
 .headerDashboardImg {
     height: 35px;
     width: 35px;
@@ -143,8 +150,8 @@ aside {
     box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
 }
 
-
 /* Rside of header */
+
 .searchBar {
     background-color: lightgray;
     border-style: none;
@@ -162,7 +169,6 @@ aside {
 
 }
 
-
 .notificationsAlert {
     position: absolute;
     border-radius: 50%;
@@ -175,19 +181,26 @@ aside {
 
 }
 
-
 .notificationMessage {
     position: absolute;
-    border: 1px solid black;
+    border: transparent;
     background-color: white;
     width: 220px;
     height: 150px;
-    padding: 10px 15px 10px 10px;
     right: 10px;
     top: 5px;
+    visibility: hidden;
 }
 
+.notifications:hover .notificationMessage {
+    visibility: visible;
 
+}
+
+.notificationMessage p:hover {
+    background-color: orangered;
+
+}
 
 /* Main */
 
@@ -224,6 +237,7 @@ aside {
 }
 
 /* 4 Boxes */
+
 .cards4 {
     grid-template-columns: 1fr 1fr;
 }
@@ -241,11 +255,10 @@ aside {
 }
 
 /* 3 Boxes */
+
 .cards3 {
     grid-template-columns: auto auto auto;
     position: relative;
-
-
 }
 
 .card3Img {
@@ -263,7 +276,6 @@ aside {
 
 .asets:hover figure .card3Img {
     top: -40px;
-
 }
 
 .asets:hover .hiden {
