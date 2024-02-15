@@ -276,3 +276,19 @@ aside {
 .asets:hover .hiden {
     visibility: visible;
 }
+
+@media(max-width:1000px) {
+
+    aside,
+    header {
+        display: none;
+    }
+
+    .firstCard {
+        grid-template-columns: 1fr;
+    }
+
+    .card3 {
+        grid-template-columns: 1fr;
+    }
+}
