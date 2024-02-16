@@ -54,7 +54,7 @@
 }
 
 .padding5 {
-    padding: 5px;
+    padding: 10px;
 }
 
 .padding30-15 {
@@ -68,7 +68,7 @@
 body {
     overflow: hidden;
     grid-template-columns: auto 1fr;
-
+    height: 100vh;
 }
 
 .borderRadius10 {
@@ -133,9 +133,9 @@ aside {
 
 .rSide {
     background-color: lightgray;
-    padding: 20px;
+    padding: 30px;
     overflow-y: scroll;
-    height: 100vh;
+
 }
 
 /* Header */
@@ -151,6 +151,10 @@ aside {
     -webkit-box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
     -moz-box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
     box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
+}
+
+.hideMenu {
+    display: none;
 }
 
 /* Rside of header */
@@ -254,11 +258,11 @@ aside {
 /* 3 Boxes */
 
 .cards3 {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card3Img {
-    height: 300px;
+    width: 100%;
     top: -20px;
     transition: top 0.7s ease-in-out;
 }
@@ -279,8 +283,15 @@ aside {
 
 @media(max-width:1000px) {
 
-    aside,
-    header {
+    .mainMenu {
+        display: none;
+    }
+
+    .hideMenu {
+        display: flex;
+    }
+
+    aside {
         display: none;
     }
 
@@ -288,7 +299,8 @@ aside {
         grid-template-columns: 1fr;
     }
 
-    .card3 {
+    .cards3 {
         grid-template-columns: 1fr;
     }
+
 }

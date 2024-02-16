@@ -112,46 +112,50 @@
     <!-- RIGHT SIDE -->
     <div class="rSide">
         <!-- HEADER-->
-        <header class="dFlex jContentSbetween">
-            <div class="dFlex aItemsCenter gap1R">
-                <figure>
-                    <img type='submit' title='See More' class="headerDashboardImg" src="./assets/icons/header/more.svg"
-                        alt="more">
-                </figure>
-                <div class="dFlex jContentSbetween aItemsCenter">
-                    <h1>Dashboard</h1>
+        <header>
+            <div class="mainMenu dFlex jContentSbetween">
+                <div class="dFlex aItemsCenter gap1R">
                     <figure>
-                        <img src="./assets/icons/header/menu.svg" alt="">
+                        <img type='submit' title='See More' class="headerDashboardImg"
+                            src="./assets/icons/header/more.svg" alt="more">
                     </figure>
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="dFlex aItemsCenter gap1R">
+                    <form action="">
+                        <label for="serchBar">
+                            <input class="searchBar" id="serchBar" type="text" placeholder="search">
+                        </label>
+                    </form>
+                    <figure>
+                        <img type='submit' title='Search' class="headerDashboardImg"
+                            src="./assets/icons/header/search.svg" alt="search">
+                    </figure>
+                    <img type='submit' title='Dashboard' src="./assets/icons/header/headerDashboard.svg"
+                        alt="dashboard">
+
+                    <div class="notifications">
+                        <figure>
+                            <img type='submit' title='Notifications' src="./assets/icons/header/notifications.svg"
+                                alt="notifications">
+                        </figure>
+                        <p class="notificationsAlert textAlignCenter">5</p>
+                        <div class="notificationMessage padding5">
+                            <p class="padding5">John Doe sent a message</p>
+                            <p class="padding5">Someone viewed your profile</p>
+                            <p class="padding5">John Doe sent a message</p>
+                            <p class="padding5">Someone viewed your profile</p>
+                            <p class="padding5">Another notification</p>
+                        </div>
+                    </div>
+                    <img type='submit' title='Profile' src="./assets/icons/header/headerAvatar.svg" alt="avatar">
                 </div>
             </div>
-            <div class="dFlex aItemsCenter gap1R">
-                <form action="">
-                    <label for="serchBar">
-                        <input class="searchBar" id="serchBar" type="text" placeholder="search">
-                    </label>
-                </form>
+            <div class=" hideMenu dFlex jContentSbetween aItemsCenter">
+                <h1>Dashboard</h1>
                 <figure>
-                    <img type='submit' title='Search' class="headerDashboardImg" src="./assets/icons/header/search.svg"
-                        alt="search">
+                    <img src="./assets/icons/header/menu.svg" alt="">
                 </figure>
-                <img type='submit' title='Dashboard' src="./assets/icons/header/headerDashboard.svg" alt="dashboard">
-
-                <div class="notifications">
-                    <figure>
-                        <img type='submit' title='Notifications' src="./assets/icons/header/notifications.svg"
-                            alt="notifications">
-                    </figure>
-                    <p class="notificationsAlert textAlignCenter">5</p>
-                    <div class="notificationMessage padding5">
-                        <p class="padding5">John Doe sent a message</p>
-                        <p class="padding5">Someone viewed your profile</p>
-                        <p class="padding5">John Doe sent a message</p>
-                        <p class="padding5">Someone viewed your profile</p>
-                        <p class="padding5">Another notification</p>
-                    </div>
-                </div>
-                <img type='submit' title='Profile' src="./assets/icons/header/headerAvatar.svg" alt="avatar">
             </div>
         </header>
         <!-- MAIN -->
@@ -358,7 +362,7 @@
                             <img class="card3Img PositionRelative borderRadius10 " src="./assets/images/card-2.jpeg"
                                 alt="card2">
                         </figure>
-                        <div class="hiden">
+                        <div class="hiden PositionRelative">
                             <img type='submit' title='View' src="./assets/icons/cards/view.svg" alt="view">
                             <img type='submit' title='Edit' src="./assets/icons/cards/edit.svg" alt="edit">
                             <img type='submit' title='Delete' src="./assets/icons/cards/delete.svg" alt="delete">
@@ -387,7 +391,7 @@
                             <img class="card3Img PositionRelative borderRadius10 " src="./assets/images/card-3.jpeg"
                                 alt="card3">
                         </figure>
-                        <div class="hiden">
+                        <div class="hiden PositionRelative">
                             <img type='submit' title='View' src="./assets/icons/cards/view.svg" alt="view">
                             <img type='submit' title='Edit' src="./assets/icons/cards/edit.svg" alt="edit">
                             <img type='submit' title='Delete' src="./assets/icons/cards/delete.svg" alt="delete">
@@ -413,7 +417,7 @@
             </div>
         </main>
         <hr>
-        <Footer class="dFlex jContentSbetween aItemsCenter">
+        <Footer class="dFlex jContentSbetween aItemsCenter paddingY50">
             <div class="dFlex gap2R">
                 <h3>HOME</h3>
                 <h3>COMPANY</h3>
