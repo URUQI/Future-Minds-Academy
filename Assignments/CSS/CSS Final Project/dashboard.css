@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,33 +13,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
-    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-
 /* Global */
 .dGrid {
+    display: -ms-grid;
     display: grid;
 }
 
 .dFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .flexDcolumn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .jContentSbetween {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .jContentCenter {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -41,6 +49,8 @@
 }
 
 .aItemsCenter {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -78,13 +88,18 @@
 
 body {
     overflow: hidden;
+    -ms-grid-columns: auto 1fr;
     grid-template-columns: auto 1fr;
     height: 100vh;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 .borderRadius10 {
     border-radius: 10px;
+}
+
+.mousePointer {
+    cursor: pointer;
 }
 
 .cardFigure {
@@ -122,13 +137,15 @@ aside {
 }
 
 .asideList {
+    -ms-grid-columns: auto 10px 1fr 10px auto;
     grid-template-columns: auto 1fr auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 10px;
     padding: 10px 20px;
     margin: 10px 10px;
     color: white;
-    cursor: pointer;
 }
 
 .active {
@@ -145,7 +162,7 @@ aside {
 
 .rSide {
     background-color: lightgray;
-    padding: 30px 20px;
+    padding: 20px 40px;
     overflow-y: scroll;
 
 }
@@ -160,9 +177,8 @@ aside {
 }
 
 .headerDashboardImg:hover {
-    -webkit-box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
-    -moz-box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.76);
+    -webkit-box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 0px 8px 6px rgba(0, 0, 0, 0.50);
 }
 
 .hideMenu {
@@ -180,6 +196,8 @@ aside {
 
 .searchBar:focus {
     border-bottom: 1px solid orangered;
+    -webkit-transition: border-bottom 0.3s ease-in;
+    -o-transition: border-bottom 0.3s ease-in;
     transition: border-bottom 0.3s ease-in;
 }
 
@@ -204,7 +222,7 @@ aside {
     position: absolute;
     border: transparent;
     background-color: white;
-    width: 220px;
+    width: 230px;
     height: 150px;
     right: 10px;
     top: 5px;
@@ -223,15 +241,13 @@ aside {
 
 /* Main */
 
-
-
 .firstCard {
+    -ms-grid-columns: auto 1fr;
     grid-template-columns: auto 1fr;
 }
 
 .flagList {
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
 }
 
 .flagList img {
@@ -241,7 +257,7 @@ aside {
 .titleGlobal {
     top: -60px;
     left: 90px;
-    width: 320px;
+    width: 400PX;
 }
 
 .iFrame {
@@ -252,6 +268,7 @@ aside {
 /* 4 Boxes */
 
 .cards4 {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -270,12 +287,15 @@ aside {
 /* 3 Boxes */
 
 .cards3 {
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card3Img {
     width: 100%;
     top: -20px;
+    -webkit-transition: top 0.7s ease-in-out;
+    -o-transition: top 0.7s ease-in-out;
     transition: top 0.7s ease-in-out;
 }
 
@@ -293,6 +313,7 @@ aside {
     visibility: visible;
 }
 
+/* Tablet */
 @media(max-width:1000px) {
 
     .mainMenu {
@@ -300,6 +321,8 @@ aside {
     }
 
     .hideMenu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -308,20 +331,25 @@ aside {
     }
 
     .firstCard {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
     .cards3 {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-
+        row-gap: 3rem;
     }
-
 }
 
+/* Phone */
 @media(max-width:600px) {
     .cards4 {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    }
 
-
+    .wrap {
+        flex-wrap: wrap;
     }
 }
