@@ -1,9 +1,9 @@
-div {
-
+h1 {
     display: inline;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
 
+}
+
+p {
+    display: inline;
 
 }
