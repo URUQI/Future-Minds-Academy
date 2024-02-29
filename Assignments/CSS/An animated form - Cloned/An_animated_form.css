@@ -51,16 +51,6 @@ img {
 
 }
 
-@keyframes my-animation {
-    from {
-        visibility: hidden;
-    }
-
-    to {
-        visibility: visible;
-    }
-}
-
 @keyframes rrethi {
 
     to {
