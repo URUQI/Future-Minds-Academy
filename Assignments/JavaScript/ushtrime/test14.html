@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // shkruaje njer numer :13
+        // shkruaje njer operacion: plus, minus, here pjestim
+        // shkruaje njer numer: 15
+        // 13-15 =-2
+        let firstNumber = parseFloat(prompt('shkruaj numrin e pare'));
+        let operation = prompt('shkruani nje operacion');
+        let secondNumber = parseFloat(prompt('shkruaj numrin e dyte'));
+        //  logic
+        if(operation === 'plus'){
+            result = firstNumber + secondNumber;
+        }
+        else if(operation === 'minus'){
+            result === firstNumber - secondNumber;
+        }
+       else if(operation === 'here'){
+            result = firstNumber * secondNumber;
+        }
+         else if(operation === 'pjestim'){
+            result = firstNumber / secondNumber;
+        }
+        else if{
+            throw new Error('Unsuported operation');
+        }
+        // outpust
+        alert('The result is ${result}');
+        
+    </script>
+    
+</body>
+</html>
