@@ -9,15 +9,9 @@
 
 <body>
     <script>
-        const pasword = '12341234';
-        let userInput = prompt('what is the pasword');
-        if (pasword) {
-            console.log('Wellcome')
-        }
-
-
-
-
+        let website = prompt('what website do you want to visit');
+        let url = `https://${website}.com`;
+        location.href = url;
     </script>
 
 </body>
