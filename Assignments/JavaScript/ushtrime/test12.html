@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        let a = parseFloat(prompt('Enter '))
+
+        let temperature = 31; //in degrees celcius
+        let description;
+        temperature = parseInt(prompt('write the temperature'));
+
+
+        if (temperature < 0) {
+            description = 'Freezing';
+        }
+        else if (temperature < 5) {
+            description = 'Very cold';
+        }
+        else if (temperature < 10) {
+            description = 'Cold';
+        }
+        else if (temperature < 18) {
+            description = 'Mild';
+        }
+        else if (temperature < 24) {
+            description = 'Hot';
+        }
+        else if (temperature < 30) {
+            description = 'Very hot';
+        }
+        else {
+            description = "Don't go outside";
+        }
+        alert(description);
     </script>
-    
+
 </body>
+
 </html>

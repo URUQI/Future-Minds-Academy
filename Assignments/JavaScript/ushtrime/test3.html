@@ -9,14 +9,18 @@
 
 <body>
     <script>
+        let userInput = prompt('Write the username:')
+        let passwordInput = prompt('Write the password');
+
+        let user = 'admin';
         let password = '12341234';
 
-        let input = prompt("Write the password:");
-
-        if (password === input) {
-            alert('Welcome!')
+        if (userInput === user && passwordInput === password) {
+            alert('WELCOME!!!');
+        } else if (userInput != user || passwordInput != password) {
+            alert('Wrong credentials.Please try again!');
         } else {
-            alert('Wrong password.Try Again!!!')
+            alert('Please write the data.')
         }
     </script>
 </body>

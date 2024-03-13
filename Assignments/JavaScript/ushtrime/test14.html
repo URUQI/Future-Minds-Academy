@@ -14,7 +14,7 @@
         // shkruaje njer numer: 15
         // 13-15 =-2
         let firstNumber = parseFloat(prompt('shkruaj numrin e pare'));
-        let operation = prompt('shkruani nje operacion');
+        let operation = prompt('shkruani nje operacion').toLowerCase;
         let secondNumber = parseFloat(prompt('shkruaj numrin e dyte'));
         //  logic
         if (operation === 'plus') {
@@ -29,11 +29,11 @@
         else if (operation === 'pjestim') {
             result = firstNumber / secondNumber;
         }
-        else if{
+        else {
             throw new Error('Unsuported operation');
         }
         // outpust
-        alert('The result is ${result}');
+        console.log(`The result is ${result}`);
 
     </script>
 
