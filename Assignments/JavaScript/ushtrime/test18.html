@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .result-conteiner{
+        padding: 1rem;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: darkslategray;
+        .answer{
+            grid-column: span 2;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 1.6 rem;
+            font-weight: bold;
+        }
+    }
+</style>
+<body>
+    <div class="result-conteiner">
+     <div class="answer">The correct  answer is 7</div>
+<div class="player-answer" id="player-1">7</div>
+<div class="player-answer" id="player-2">8</div>
+    </div>
+    
+</body>
+</html>

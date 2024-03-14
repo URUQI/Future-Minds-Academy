@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // programi e  zgjedh nje numer
+        // te rstesishem prej 1 deri ne 6 
+        // prompt the  user me ja  qellu numrit
+        let random = Math.floor(Math.random() * 6) + 1;
+       let input;
+       let counter = 0;
+        do{
+input = parseInt(prompt('qello numrin'));
+counter++;
+
+        }
+        while( random !== input)
+    if(counter === 1){ alert(`The correct numer is ${random}`and you guessed it in $(counter)here`);
+}
+else
+{ aler('The correct numer is $(random)and you guessed it in $(counter)here');
+}
+       
+    </sceript>
+    
+</body>
+</html>
