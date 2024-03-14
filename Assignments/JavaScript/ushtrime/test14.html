@@ -16,24 +16,25 @@
         let firstNumber = parseFloat(prompt('shkruaj numrin e pare'));
         let operation = prompt('shkruani nje operacion').toLowerCase;
         let secondNumber = parseFloat(prompt('shkruaj numrin e dyte'));
-        //  logic
-        if (operation === 'plus') {
+        // logic
+        let result;
+        if (operation === '+') {
             result = firstNumber + secondNumber;
         }
-        else if (operation === 'minus') {
-            result === firstNumber - secondNumber;
+        else if (operation === '-') {
+            result = firstNumber - secondNumber;
         }
-        else if (operation === 'here') {
+        else if (operation === '*') {
             result = firstNumber * secondNumber;
         }
-        else if (operation === 'pjestim') {
+        else if (operation === '/') {
             result = firstNumber / secondNumber;
         }
         else {
             throw new Error('Unsuported operation');
         }
         // outpust
-        console.log(`The result is ${result}`);
+        alert(`The result is ${result}`);
 
     </script>
 
