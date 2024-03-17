@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        // programi e  zgjedh nje numer
-        // te rstesishem prej 1 deri ne 6 
-        // prompt the  user me ja  qellu numrit
-        let random = Math.floor(Math.random() * 6) + 1;
-       let input;
-       let counter = 0;
-        do{
-input = parseInt(prompt('qello numrin'));
-counter++;
+        let userInput;
+        let counter = 0;
+        let attempts = 3;
 
+        do {
+            userInput = prompt('Type the password:');
+            counter++;
+            attempts--;
         }
-        while( random !== input)
-    if(counter === 1){ alert(`The correct numer is ${random}`and you guessed it in $(counter)here`);
-}
-else
-{ aler('The correct numer is $(random)and you guessed it in $(counter)here');
-}
-       
-    </sceript>
-    
+
+        while (userInput !== '12341234' && counter < 3);
+
+
+        if (userInput === '12341234') {
+            alert('Success!!')
+        } else {
+            alert(`Incorrect password.You have ${attempts} ${counter === 1 ? 'try' : 'tries'} left!`)
+        }
+
+    </script>
 </body>
+
 </html>

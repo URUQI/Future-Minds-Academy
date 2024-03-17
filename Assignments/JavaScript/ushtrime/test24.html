@@ -9,40 +9,23 @@
 
 <body>
     <script>
-        // let counter = 1;
-        // while(counter <= 100){
-        //     console.log(counter);
-        //     counter++;
-        // }
-        // let userInput = parseInt(prompt('shkruani nje numer'))
-        // let counter = 1;
-        // while(counter <= userInput){
-        //     console.log(counter);
-        //     counter++;
-        // }
+        let userInput = parseInt(prompt("Please enter a positive integer from 1 to 100:"));
 
-        // let counter = 0;
-        // while(counter <= 100){
-        //     console.log(counter);
-        //     counter+=2;
-        // }
+        if (userInput >= 1 && userInput <= 100) {
+            let numbers = '';
+            let i = 1;
 
-        // let counter = 1;
-        // let sum = 0;
-        // while(counter <= 100){
-        //    sum += counter;
-        //     counter ++;
-        // }
-        // console.log(sum);
-        let userInput = parseInt(prompt('shkruajeni nje numer'))
-        let sum = 0;
-        while (userInput !== 0) {
-            sum += userInput;
+            while (i <= userInput) {
+                numbers += i + (i !== userInput ? ", " : "");
+                i++;
+            }
 
-            userInput = parseInt(prompt('shkruajeni nje numer'));
 
+            console.log(numbers);
+        } else {
+            console.log("Invalid input. Please enter a positive integer from 1 to 100.");
         }
-        console.log(sum);
+
     </script>
 
 </body>
