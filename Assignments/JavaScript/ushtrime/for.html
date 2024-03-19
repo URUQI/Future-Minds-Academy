@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+
+<body>
+    <h3 class="setTemp">Temp: 0</h3>
+    <select name="" id="" class="tempList" onchange="changeTemp(this)">
+        <option value="1">1</option>
+
+    </select>
+
+    <script>
+        const tempList = document.querySelector('.tempList');
+        const setTemp = document.querySelector('.setTemp');
+
+        let buildOptions = '';
+
+        for (let run = 0; run <= 30; run++) {
+
+            buildOptions += '<option value="' + run + '">' + run + '</option>';
+        }
+
+        function changeTemp(opt) {
+            console.log(opt.value);
+            setTemp.innerHTML = "Temp: " + opt.value;
+        }
+
+        //tempList.addEventListener("change",(event)=>{
+        // setTemp.innerHTML = "Temp: " + event.target.value;
+        // }
+
+        //qekjo o praktike ma e mire se qajo nalt
+
+        tempList.innerHTML = buildOptions;
+
+
+    </script>
+</body>
+
+</html>
