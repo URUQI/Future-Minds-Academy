@@ -11,9 +11,27 @@
     <script>
         document.addEventListener('keypress', (e) => {
             let letter = e.key;
+            let symbol = prompt('Write a symbol:');
+            symbol = symbol.toLowerCase();
 
-            //now write code to check for vowel
+            if (symbol.length !== 1) {
+                console.log('Please write only one letter');
+            }
 
+            else {
+
+                if ('aeiou'.includes(symbol)) {
+                    console.log('The letter you typed is a vowel');
+                }
+
+                else if ('bcdfghjklmnpqrstvwxyz'.includes(symbol)) {
+                    console.log('The letter you typed is a consonant');
+                }
+
+                else if ('0123456789'.includes(symbol)) {
+                    console.log('You entered a number');
+                }
+            }
         });
 
     </script>
