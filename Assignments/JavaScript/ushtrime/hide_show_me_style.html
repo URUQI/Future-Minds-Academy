@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>hide show me</title>
+        <title>Hide Show Me</title>
 </head>
 <style>
-        .card{
-                width:  400px;
-        }
-        .hideCard{
-                visibility: hidden;
+        .card {
+                width: 400px;
         }
 </style>
+
 <body>
         <div class="card">
-                <h1>Wellcome to my  card</h1>
-                <img src="https://img.freepik.com/free-photo/cute-domestic-kitten-sits-window-staring-outside-generative-ai_188544-12519.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quaerat pariatur facere. Repudiandae quas adipisci quos sequi ea ut et distinctio consequatur perferendis, vel provident consectetur delectus quia tempore quasi?</p>
+                <h1>Wellcome to my card</h1>
+                <img src="https://img.freepik.com/free-photo/cute-domestic-kitten-sits-window-staring-outside-generative-ai_188544-12519.jpg"
+                        alt=" cat" width="300">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quaerat pariatur facere.</p>
         </div>
+
         <a href="javascript: hideShowMe();">Hide me</a>
+
         <script>
-const card = document.querySelector('.card');
-const a = document.querySelector('a');
+                const card = document.querySelector('.card');
+                const a = document.querySelector('a');
+                let state = true;
 
-function hideShowMe(){
-        
-        card.classList.add('hideCard');
-        card.classList.remove('.showCard');
-        a.innerHTML = 'show me';
+                function hideShowMe() {
 
-        if(state){
-                card.style.visibility = 'hiden'
-                a.innerHTML = 'show me';
-                state = false;
-        }
-        else{
-                card.style.visibility = 'visibility'
-                a.innerHTML = 'hide me';
-                state = true;
-        }
-}
+
+
+                        if (state) {
+                                card.style.visibility = 'hidden'
+                                a.innerHTML = 'Show Me';
+                                state = false;
+                        }
+                        else {
+                                card.style.visibility = 'visible'
+                                a.innerHTML = 'Hide Me';
+                                state = true;
+                        }
+                }
 
         </script>
-        
+
 </body>
+
 </html>
