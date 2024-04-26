@@ -5,8 +5,18 @@ document.body.appendChild(rrafshi);
 
 const ctx = rrafshi.getContext('2d');
 
+let br = document.createElement('br');
+document.body.appendChild(br);
+
+let startOver = document.createElement('button');
+startOver.innerHTML = 'Start Over';
+startOver.style.fontSize = '20px';
+startOver.style.padding = '10px';
+startOver.style.visibility = 'hidden';
+document.body.appendChild(startOver);
+
 let points = 0;
-let ticker = 20;
+let ticker = 10;
 let gameOver = false;
 let winPt = 2;
 
@@ -99,22 +109,27 @@ let render = function () {
     ctx.fillText('Timer: ' + ticker, 400, 30);
 
 
-
-
     if (gameOver) {
         if (points >= winPt) {
             ctx.fillText('YOU WIN!', 200, 30);
         } else {
             ctx.fillText('YOU LOSE!', 200, 30);
         }
+
+    }
+}
+
+let startTimer = function () {
+    if (ticker != 0) { ticker--; } else {
+        gameOver = true;
+        startOver.style.visibility = 'visible';
     }
 
 }
 
-let startTimer = function () {
-    if (ticker != 0) { ticker--; } else { gameOver = true; }
-
-}
+startOver.addEventListener('click', function () {
+    location.reload();
+})
 
 
 
