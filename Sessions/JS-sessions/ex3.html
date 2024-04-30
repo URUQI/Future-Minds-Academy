@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>variables</title>
+</head>
+
+<body>
+        Num1:<input type="number" id><br>
+        Num2:<input type="number"><br><br>
+
+
+        <input type="radio" name="arithmetic" value="sum" id="arithmetic">Add<br>
+        <input type="radio" name="arithmetic" value="diff" id="arithmetic">Substract<br>
+        <input type="radio" name="arithmetic" value="divide" id="arithmetic">Divide<br>
+        <input type="radio" name="arithmetic" value="multiply" id="arithmetic">Multiplay<br><br>
+
+                                        Result: <h3>0</h3>
+                                        <button onclick="doCalculation()">Calculate</button>
+
+
+                                        <script>
+                                                const num1 = document.querySelector("#num1");
+                                                const num2 = document.querySelector("#num2");
+                                                const arithmetic = = document.querySelector("#arithmetic");
+
+                                                let result = calculate("sum", 6, 6,);
+                                                console.log("sum" + result);
+
+                                                result = calculate("diff", 6, 6,);
+                                                console.log("Diff: " + result);
+
+                                                result = calculate("divide", 6, 6,);
+                                                console.log("Divide: " + result);
+
+                                                result = calculate("multiply", 6, 6,);
+                                                console.log("Multiply: " + result);
+
+
+                                                function calculate(arg, a, b) {
+                                                        if (arg == "sum") { return a + b; }
+                                                        if (arg == "diff") { return a - b; }
+                                                        if (arg == "divide") { return a / b; }
+                                                        if (arg == "multiply") { return a * b; }
+
+
+                                                }
+                                                function doCalculation() {
+                                                        console.log("Num1" + num1.value);
+                                                        console.log("Num2" + num2.value);
+
+                                                        console.log("Arithmetic" +)
+                                                }
+                                        </script>
+
+</body>
+
+</html>
