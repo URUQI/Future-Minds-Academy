@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+</head>
+
+<body>
+    <h3 class="tries">Tries: 3</h3>
+    <label for="">Guess a number between 1-10:</label><br>
+    <input type="number" id="userNum">
+    <p class="hints"></p>
+    <button onclick="guessedNumber()">Guess</button>
+    <hr>
+    <h3 class="msg"></h3>
+
+    <script>
+        let guessedNum = Math.floor(Math.random() * 10) + 1;
+        let triesCount = 3; // Number of tries
+        const userNumInput = document.querySelector("#userNum");
+        const hints = document.querySelector(".hints");
+        const msg = document.querySelector(".msg");
+        const tries = document.querySelector(".tries");
+
+        console.log(guessedNum);
+
+        function guessedNumber() {
+            if (triesCount > 0) {
+                if (parseInt(userNumInput.value) < guessedNum) {
+                    hints.textContent = "Please guess higher: ";
+                } else if (parseInt(userNumInput.value) > guessedNum) {
+                    hints.textContent = "Please guess lower: ";
+                } else {
+                    msg.textContent = "Congratulations";
+                    hints.textContent = "";
+                    triesCount = 0; // Stop further tries
+                }
+                triesCount--;
+                tries.textContent = "Tries: " + triesCount;
+            } else {
+                msg.textContent = "You lost";
+                userNumInput.disabled = true; // Disable input after losing
+            }
+        }
+    </script>
+
+</body>
+
+</html>
