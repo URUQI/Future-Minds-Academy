@@ -9,12 +9,20 @@
 
 <body>
     <script>
-        numbers = [1, 2, 3, 4, 5]
-        average = sum(numbers) / len(numbers)
-        print(average)
+        // Define the array of numbers
+        var numbers = [1, 2, 3, 4, 5];
 
+        // Calculate the sum of numbers
+        var sum = numbers.reduce(function (accumulator, currentValue) {
+            return accumulator + currentValue;
+        }, 0);
+
+        // Calculate the average
+        var average = sum / numbers.length;
+
+        // Print the average
+        console.log(average);
     </script>
-
 </body>
 
 </html>
