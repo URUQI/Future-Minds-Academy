@@ -57,10 +57,10 @@ function render() {
 
         ctx.font = "20px Georgia";
         ctx.fillStyle = "White";
-        ctx.fillText("Timer: "+tickTimer, 400, 25);
+        ctx.fillText("Timer: " + tickTimer, 400, 25);
 
 }
- 
+
 
 
 
@@ -82,8 +82,8 @@ addEventListener("keydown", function (e) {
         }
 
 });
-function timer(){
-        tickTimer --;
+function timer() {
+        tickTimer--;
 }
 
 setInterval(render, 1); //thirre render  cdo 1 second 
