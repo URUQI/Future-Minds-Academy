@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="paragrafi">Kjo është një paragraf.</p>
+    <div id="container"></div>
+    <img id="imazhi" src="imazhi.jpg" alt="Imazhi">
+
+    <script>
+        // Zgjedhim elementin HTML me id 'paragrafi'
+        var paragrafi = document.getElementById('paragrafi');
+
+        // Ndryshojmë përmbajtjen e paragrafit
+        paragrafi.innerHTML = "Ky është një paragraf i ri nga JavaScript.";
+        // Krijimi i një elementi të ri (për shembull, një paragraf)
+        var paragrafi = document.createElement('p');
+        paragrafi.textContent = "Ky është një paragraf krijuar nga JavaScript.";
+
+        // Zgjedhim elementin në të cilin do të shtojmë paragrafin
+        var container = document.getElementById('container');
+
+        // Shtojmë paragrafin në elementin e zgjedhur
+        container.appendChild(paragrafi);
+        // Zgjedhim elementin HTML me id 'imazhi'
+        var imazhi = document.getElementById('imazhi');
+
+        // Ndryshojmë atributin 'src' të imazhit
+        imazhi.src = "imazhi2.jpg";
+
+
+    </script>
+</body>
+
+</html>
