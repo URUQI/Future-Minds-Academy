@@ -4,30 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sum Positive Numbers</title>
 </head>
 
 <body>
+    <h1>Sum Positive Numbers</h1>
     <script>
-        let letter = prompt('Write a letter');
-        let vowels = 'aeiouy';
+        function sumPositiveNumbers() {
+            let sum = 0;
+            let userInput;
 
-        letter = letter.toLowerCase();
+            // Continue asking for input until the user enters 0
+            while (true) {
+                userInput = prompt("Enter a positive number (or enter 0 to finish):");
 
-        if (letter.length !== 1) {
-            console.log('Please write only one letter');
-        }
-        else {
-            if (vowels.includes(letter)) {
-                console.log('The letter you typed is a vowel!');
+                // Convert the input to a number
+                let number = Number(userInput);
+
+                // Check if the input is a valid number
+                if (isNaN(number)) {
+                    console.log("That's not a valid number. Please try again.");
+                    continue;
+                }
+
+                // If the user enters 0, break out of the loop
+                if (number === 0) {
+                    break;
+                }
+
+                // Check if the number is positive
+                if (number > 0) {
+                    sum += number;
+                } else {
+                    console.log("Please enter a positive number.");
+                }
             }
-            else {
-                console.log('The letter you typed is NOT a vowel!');
-            }
+
+            // Output the sum of the numbers
+            console.log(`The sum of the numbers you wrote is equal to ${sum}.`);
         }
 
+        // Call the function to start the process
+        sumPositiveNumbers();
     </script>
-
 </body>
 
 </html>

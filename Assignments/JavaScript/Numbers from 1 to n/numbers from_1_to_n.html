@@ -4,29 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Print Numbers</title>
 </head>
 
 <body>
+    <h1>Print Numbers from 1 to User Input</h1>
     <script>
-        let userInput = parseInt(prompt("Please enter a positive integer from 1 to 100:"));
+        function printNumbers() {
+            let userInput = prompt("Enter a positive integer from 1 to 100:");
 
-        if (userInput >= 1 && userInput <= 100) {
-            let numbers = '';
-            let i = 1;
+            // Convert the input to a number
+            let number = Number(userInput);
 
-            while (i <= userInput) {
-                numbers += i + (i !== userInput ? ", " : "");
-                i++;
+            // Check if the input is a valid number within the range
+            if (isNaN(number) || number < 1 || number > 100) {
+                console.log("Please enter a valid number between 1 and 100.");
+                return;
             }
 
+            // Print each number individually
+            console.log("Printing numbers individually:");
+            for (let i = 1; i <= number; i++) {
+                console.log(i);
+            }
 
-            console.log(numbers);
-        } else {
-            console.log("Invalid input. Please enter a positive integer from 1 to 100.");
+            // Print all numbers in a single console.log()
+            let numberString = "";
+            for (let i = 1; i <= number; i++) {
+                if (i === 1) {
+                    numberString = "1";
+                } else {
+                    numberString += " " + i;
+                }
+            }
+            console.log("Printing numbers in one console.log():");
+            console.log(numberString);
+
+            // Print numbers separated by commas without trailing comma
+            let commaSeparatedString = "";
+            for (let i = 1; i <= number; i++) {
+                if (i === 1) {
+                    commaSeparatedString = "1";
+                } else {
+                    commaSeparatedString += ", " + i;
+                }
+            }
+            console.log("Printing numbers as comma separated string:");
+            console.log(commaSeparatedString);
         }
-    </script>
 
+        // Call the function to start the process
+        printNumbers();
+    </script>
 </body>
 
 </html>
