@@ -4,38 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Character Type Detector</title>
 </head>
 
 <body>
+    <h1>Press any key to detect the character type</h1>
     <script>
-        document.addEventListener('keypress', (e) => {
-            let letter = e.key;
-            let symbol = prompt('Write a symbol:');
-            symbol = symbol.toLowerCase();
+        // Function to check the type of character
+        function checkCharacterType(char) {
+            const vowels = 'AEIOUaeiou';
+            const numbers = '0123456789';
 
-            if (symbol.length !== 1) {
-                console.log('Please write only one letter');
+            if (char.length !== 1) {
+                console.log('Please enter a single character.');
+                return;
             }
 
-            else {
-
-                if ('aeiou'.includes(symbol)) {
-                    console.log('The letter you typed is a vowel');
-                }
-
-                else if ('bcdfghjklmnpqrstvwxyz'.includes(symbol)) {
-                    console.log('The letter you typed is a consonant');
-                }
-
-                else if ('0123456789'.includes(symbol)) {
-                    console.log('You entered a number');
-                }
+            if (vowels.includes(char)) {
+                console.log('You entered a vowel.');
+            } else if (numbers.includes(char)) {
+                console.log('You entered a number.');
+            } else if (char.match(/[a-zA-Z]/)) {
+                console.log('You entered a consonant.');
+            } else {
+                console.log('You entered a symbol.');
             }
+        }
+
+        // Event Listener for keydown event
+        document.addEventListener('keydown', (event) => {
+            const keyPressed = event.key;
+            checkCharacterType(keyPressed);
         });
-
     </script>
-
 </body>
 
 </html>
