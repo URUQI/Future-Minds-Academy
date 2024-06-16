@@ -8,7 +8,7 @@ const que_text = document.querySelector('.que_text');
 const option_list = document.querySelector('.option_list');
 const total_que = document.querySelector(".total_que");
 
-
+let timer = 15;
 
 
 start_btn.addEventListener('click', function () {
@@ -26,7 +26,7 @@ continue_btn.addEventListener('click', function () {
     loadQuestions(0);
 });
 
-let timer = 15;
+
 
 function startQuiz() {
     let timeCount = setInterval(() => {
