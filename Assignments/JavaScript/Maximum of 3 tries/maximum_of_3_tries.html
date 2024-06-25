@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum of 3 tries</title>
+</head>
+
+<body>
+    <script>
+        function checkPassword() {
+            const correctPassword = '12341234';
+            let attempts = 0;
+            const maxAttempts = 3;
+            let guessedCorrectly = false;
+
+            do {
+                const triesLeft = maxAttempts - attempts;
+                const promptMessage = `Enter the password (you have ${triesLeft} ${triesLeft === 1 ? "try" : "tries"} left):`;
+                const userInput = prompt(promptMessage);
+
+                attempts += 1;
+
+                if (userInput === correctPassword) {
+                    guessedCorrectly = true;
+                    alert("Welcome!");
+                    break;
+                } else if (attempts < maxAttempts) {
+                    alert("Wrong password. Try again.");
+                }
+            } while (attempts < maxAttempts && !guessedCorrectly);
+
+            if (!guessedCorrectly) {
+                alert("You can't try anymore.");
+            }
+        }
+
+        checkPassword();
+
+    </script>
+</body>
+
+</html>
