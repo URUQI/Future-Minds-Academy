@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hailstone Numbers</title>
+</head>
+
+<body>
+    <script>
+        function hailstoneSequence(start) {
+            let number = start;
+            console.log(number);
+
+            while (number !== 1) {
+                if (number % 2 === 0) {
+                    number = number / 2;
+                } else {
+                    number = number * 3 + 1;
+                }
+                console.log(number);
+            }
+        }
+
+        const userInput = parseInt(prompt("Enter a positive integer:"), 10);
+
+        if (!isNaN(userInput) && userInput > 0) {
+            hailstoneSequence(userInput);
+        } else {
+            console.log("Please enter a valid positive integer.");
+        }
+
+    </script>
+
+</body>
+
+</html>
