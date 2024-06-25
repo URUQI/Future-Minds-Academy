@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function guessNumber() {
+            const targetNumber = Math.floor(Math.random() * 6) + 1;
+            let attempts = 0;
+            let guessedCorrectly = false;
+
+            do {
+                const guess = parseInt(prompt("Guess the number (between 1 and 6):"), 10);
+                attempts += 1;
+
+                if (guess === targetNumber) {
+                    guessedCorrectly = true;
+                    const triesWord = attempts === 1 ? "try" : "tries";
+                    alert(`Congratulations, you guessed the correct number in ${attempts} ${triesWord}.`);
+                } else {
+                    alert("Wrong guess. Try again.");
+                }
+            } while (!guessedCorrectly);
+        }
+
+        guessNumber();
+
+    </script>
+</body>
+
+</html>
