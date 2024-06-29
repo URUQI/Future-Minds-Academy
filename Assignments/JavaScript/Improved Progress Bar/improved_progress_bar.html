@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 30px;
+            width: 0;
+            background-color: green;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .tooltip {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            background: #333;
+            color: #fff;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 12px;
+            display: none;
+        }
+    </style>
+    <title>Progress Bar</title>
+</head>
+
+<body>
+    <div class="progress-container">
+        <div class="progress-bar">
+            <span class="tooltip"></span>
+        </div>
+    </div>
+
+    <script>
+        // Function to validate percentage
+        function isValidPercentage(number) {
+            return number >= 0 && number <= 100;
+        }
+
+        // Function to get progress color based on percentage
+        function getProgressColor(percentage) {
+            if (percentage < 30) return 'red';
+            if (percentage < 70) return 'orange';
+            return 'green';
+        }
+
+        // Function to modify the progress bar
+        function modifyProgressBar(percentage, color) {
+            const progressBar = document.querySelector('.progress-bar');
+            const tooltip = document.querySelector('.tooltip');
+
+            progressBar.style.width = percentage + '%';
+            progressBar.style.backgroundColor = color;
+            tooltip.innerHTML = percentage + '%';
+            tooltip.style.display = 'inline-block';
+        }
+
+        // Function to set the progress using the above functions
+        function setProgress(percentage) {
+            if (!isValidPercentage(percentage)) {
+                console.error('Invalid percentage: ', percentage);
+                return;
+            }
+            const color = getProgressColor(percentage);
+            modifyProgressBar(percentage, color);
+        }
+
+        // Interval to change the progress bar every 2 seconds
+        setInterval(() => {
+            const randomPercentage = Math.floor(Math.random() * 101);
+            setProgress(randomPercentage);
+        }, 2000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Expressions</title>
+</head>
+
+<body>
+    <script>
+        // Examples of calling the functions before they are created
+        try {
+            printHelloWorldTenTimes();
+        } catch (e) {
+            console.log("Error: printHelloWorldTenTimes is not defined.");
+        }
+
+        try {
+            printString("This is a sample string.");
+        } catch (e) {
+            console.log("Error: printString is not defined.");
+        }
+
+        try {
+            let kilometers = 5;
+            let miles = convertKilometersToMiles(kilometers);
+            console.log(`${kilometers} kilometers is equal to ${miles} miles.`);
+        } catch (e) {
+            console.log("Error: convertKilometersToMiles is not defined.");
+        }
+
+        try {
+            let radius = 3;
+            let area = calculateCircleArea(radius);
+            console.log(`The area of a circle with radius ${radius} is ${area}.`);
+        } catch (e) {
+            console.log("Error: calculateCircleArea is not defined.");
+        }
+
+        try {
+            let name = "John";
+            let surname = "Doe";
+            let welcomeMessage = welcomeUser(name, surname);
+            console.log(welcomeMessage);
+        } catch (e) {
+            console.log("Error: welcomeUser is not defined.");
+        }
+
+        try {
+            let age = 30;
+            let workingCitizen = isWorkingCitizen(age);
+            console.log(`Is the person of age ${age} a working citizen? ${workingCitizen}`);
+        } catch (e) {
+            console.log("Error: isWorkingCitizen is not defined.");
+        }
+
+        try {
+            let number = 4;
+            let even = isEven(number);
+            console.log(`Is the number ${number} even? ${even}`);
+        } catch (e) {
+            console.log("Error: isEven is not defined.");
+        }
+
+        // 1. Function to print "Hello World" ten times in the console
+        const printHelloWorldTenTimes = function () {
+            for (let i = 0; i < 10; i++) {
+                console.log("Hello World");
+            }
+        };
+
+        // 2. Function that accepts a string parameter and prints it to the console
+        const printString = (message) => {
+            console.log(message);
+        };
+
+        // 3. Function that converts kilometers into miles and returns the miles as a number
+        const convertKilometersToMiles = (kilometers) => {
+            const miles = kilometers * 0.621371;
+            return miles;
+        };
+
+        // 4. Function that accepts the radius of a circle and returns its area
+        const calculateCircleArea = (radius) => {
+            const area = Math.PI * radius * radius;
+            return area;
+        };
+
+        // 5. Function that accepts the user's name and surname and returns a welcome string
+        const welcomeUser = (name, surname) => {
+            return `Welcome, ${name} ${surname}`;
+        };
+
+        // 6. Function that checks if the user is a working citizen
+        const isWorkingCitizen = (age) => {
+            return age >= 18 && age < 65;
+        };
+
+        // 7. Function that checks if a positive integer is even
+        const isEven = (number) => {
+            return number % 2 === 0;
+        };
+
+        // Examples of calling the functions after they are created:
+
+        // 1. Print "Hello World" ten times
+        printHelloWorldTenTimes();
+
+        // 2. Print a string
+        printString("This is a sample string.");
+
+        // 3. Convert kilometers to miles
+        kilometers = 5;
+        miles = convertKilometersToMiles(kilometers);
+        console.log(`${kilometers} kilometers is equal to ${miles} miles.`);
+
+        // 4. Calculate the area of a circle
+        radius = 3;
+        area = calculateCircleArea(radius);
+        console.log(`The area of a circle with radius ${radius} is ${area}.`);
+
+        // 5. Welcome a user
+        name = "John";
+        surname = "Doe";
+        welcomeMessage = welcomeUser(name, surname);
+        console.log(welcomeMessage);
+
+        // 6. Check if a user is a working citizen
+        age = 30;
+        workingCitizen = isWorkingCitizen(age);
+        console.log(`Is the person of age ${age} a working citizen? ${workingCitizen}`);
+
+        // 7. Check if a number is even
+        number = 4;
+        even = isEven(number);
+        console.log(`Is the number ${number} even? ${even}`);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+</head>
+
+<body>
+    <script>
+        // Function to generate the first X numbers of the Fibonacci sequence
+        function generateFibonacci(X) {
+            if (X <= 0) {
+                console.log("Please enter a positive integer.");
+                return;
+            }
+
+            let fibSequence = [1, 1];
+
+            for (let i = 2; i < X; i++) {
+                fibSequence[i] = fibSequence[i - 1] + fibSequence[i - 2];
+            }
+
+            // If X is 1, adjust the sequence to only include the first number
+            if (X === 1) {
+                fibSequence = [1];
+            }
+
+            console.log(fibSequence.join(", "));
+        }
+
+        // Function to prompt the user for input
+        function getUserInput() {
+            let input = prompt("Enter the number of Fibonacci numbers to generate:");
+            let X = parseInt(input);
+
+            if (isNaN(X)) {
+                console.log("Please enter a valid number.");
+            } else {
+                generateFibonacci(X);
+            }
+        }
+
+        // Run the program
+        getUserInput();
+
+    </script>
+</body>
+
+</html>

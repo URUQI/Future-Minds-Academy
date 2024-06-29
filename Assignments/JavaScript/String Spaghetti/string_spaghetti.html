@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Spaghetti</title>
+</head>
+
+<body>
+    <script>
+        // Challenge 1: Extract the first letter of the first word, remove whitespace, and make it uppercase.
+        const str = '     hello, dolly! ';
+        const trimmedStr = str.trim(); // Remove leading and trailing whitespace
+        const firstLetter = trimmedStr.charAt(0).toUpperCase(); // Get the first letter and make it uppercase
+        console.log(firstLetter); // Output: 'H'
+
+        // Challenge 2: Extract hours, minutes, and period ('AM' or 'PM') from a time string.
+        const time = '05:36 PM';
+        const [timePart, period] = time.split(' '); // Split time and period
+        const [hours, minutes] = timePart.split(':').map(Number); // Split hours and minutes and convert to numbers
+
+        console.log(hours); // Output: 5
+        console.log(minutes); // Output: 36
+        console.log(period); // Output: 'PM'
+
+        // Challenge 3: Extract the city and temperature from a string like "New York, 15°C".
+        const temperatureStr = "New York, 15°C";
+
+        const cityTemperaturePattern = /(.+),\s([-+]?\d+)(°[CF])/; // Regex to capture city and temperature
+        const [, city, temperature, unit] = temperatureStr.match(cityTemperaturePattern);
+
+        const cityTrimmed = city.trim(); // Remove any leading/trailing whitespace from city
+        const temperatureNumber = Number(temperature); // Convert temperature to number
+
+        console.log(cityTrimmed); // Output: 'New York'
+        console.log(temperatureNumber); // Output: 15
+        console.log(unit); // Output: '°C'
+
+        // Testing with other inputs
+        const testStr1 = "Ottawa, -4°C";
+        const testStr2 = "Prishtina, 50°F";
+
+        const [, city1, temperature1, unit1] = testStr1.match(cityTemperaturePattern);
+        const [, city2, temperature2, unit2] = testStr2.match(cityTemperaturePattern);
+
+        console.log(city1.trim(), Number(temperature1), unit1); // Output: 'Ottawa' -4 '°C'
+        console.log(city2.trim(), Number(temperature2), unit2); // Output: 'Prishtina' 50 '°F'
+
+    </script>
+
+</body>
+
+</html>
